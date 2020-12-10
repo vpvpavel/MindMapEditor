@@ -7,23 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477A921E2580B9BB007EBBD6 /* UITool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A921D2580B9BB007EBBD6 /* UITool.swift */; };
 		4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789052C258061E100F7EFCE /* AppDelegate.swift */; };
-		4789052F258061E100F7EFCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789052E258061E100F7EFCE /* SceneDelegate.swift */; };
-		47890531258061E100F7EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890530258061E100F7EFCE /* ViewController.swift */; };
-		47890534258061E100F7EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47890532258061E100F7EFCE /* Main.storyboard */; };
+		47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890530258061E100F7EFCE /* CanvasViewController.swift */; };
 		47890536258061E200F7EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47890535258061E200F7EFCE /* Assets.xcassets */; };
 		47890539258061E200F7EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47890537258061E200F7EFCE /* LaunchScreen.storyboard */; };
+		4789054E2580656A00F7EFCE /* UIMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789054D2580656A00F7EFCE /* UIMesh.swift */; };
+		47890551258065ED00F7EFCE /* UICanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890550258065ED00F7EFCE /* UICanvas.swift */; };
+		478905562580684F00F7EFCE /* UICanvasOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905552580684F00F7EFCE /* UICanvasOverlay.swift */; };
+		478905592580686E00F7EFCE /* UINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905582580686E00F7EFCE /* UINode.swift */; };
+		4789055C258068A100F7EFCE /* UINodeSocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789055B258068A100F7EFCE /* UINodeSocketType.swift */; };
+		4789055F258068E600F7EFCE /* UINodeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789055E258068E600F7EFCE /* UINodeContentView.swift */; };
+		478905622580690400F7EFCE /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905612580690400F7EFCE /* Node.swift */; };
+		478905652580692200F7EFCE /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905642580692200F7EFCE /* BaseNode.swift */; };
+		4789056925806A3500F7EFCE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056825806A3500F7EFCE /* Utils.swift */; };
+		4789056D2580A16A00F7EFCE /* BranchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056C2580A16A00F7EFCE /* BranchNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		477A921D2580B9BB007EBBD6 /* UITool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITool.swift; sourceTree = "<group>"; };
 		47890529258061E100F7EFCE /* MindMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789052C258061E100F7EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4789052E258061E100F7EFCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		47890530258061E100F7EFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		47890533258061E100F7EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47890530258061E100F7EFCE /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		47890535258061E200F7EFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47890538258061E200F7EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4789053A258061E200F7EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4789054A258064C400F7EFCE /* MindMapEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MindMapEditor.entitlements; sourceTree = "<group>"; };
+		4789054D2580656A00F7EFCE /* UIMesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMesh.swift; sourceTree = "<group>"; };
+		47890550258065ED00F7EFCE /* UICanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvas.swift; sourceTree = "<group>"; };
+		478905552580684F00F7EFCE /* UICanvasOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvasOverlay.swift; sourceTree = "<group>"; };
+		478905582580686E00F7EFCE /* UINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINode.swift; sourceTree = "<group>"; };
+		4789055B258068A100F7EFCE /* UINodeSocketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINodeSocketType.swift; sourceTree = "<group>"; };
+		4789055E258068E600F7EFCE /* UINodeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINodeContentView.swift; sourceTree = "<group>"; };
+		478905612580690400F7EFCE /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		478905642580692200F7EFCE /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
+		4789056825806A3500F7EFCE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4789056C2580A16A00F7EFCE /* BranchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +75,49 @@
 		4789052B258061E100F7EFCE /* MindMapEditor */ = {
 			isa = PBXGroup;
 			children = (
-				4789052C258061E100F7EFCE /* AppDelegate.swift */,
-				4789052E258061E100F7EFCE /* SceneDelegate.swift */,
-				47890530258061E100F7EFCE /* ViewController.swift */,
-				47890532258061E100F7EFCE /* Main.storyboard */,
-				47890535258061E200F7EFCE /* Assets.xcassets */,
-				47890537258061E200F7EFCE /* LaunchScreen.storyboard */,
+				4789054A258064C400F7EFCE /* MindMapEditor.entitlements */,
 				4789053A258061E200F7EFCE /* Info.plist */,
+				4789052C258061E100F7EFCE /* AppDelegate.swift */,
+				47890530258061E100F7EFCE /* CanvasViewController.swift */,
+				47890541258062B600F7EFCE /* Models */,
+				47890542258062BF00F7EFCE /* UI */,
+				478905432580640800F7EFCE /* Resources */,
+				4789056825806A3500F7EFCE /* Utils.swift */,
 			);
 			path = MindMapEditor;
+			sourceTree = "<group>";
+		};
+		47890541258062B600F7EFCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				478905612580690400F7EFCE /* Node.swift */,
+				478905642580692200F7EFCE /* BaseNode.swift */,
+				4789056C2580A16A00F7EFCE /* BranchNode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47890542258062BF00F7EFCE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				478905552580684F00F7EFCE /* UICanvasOverlay.swift */,
+				47890550258065ED00F7EFCE /* UICanvas.swift */,
+				4789054D2580656A00F7EFCE /* UIMesh.swift */,
+				478905582580686E00F7EFCE /* UINode.swift */,
+				4789055B258068A100F7EFCE /* UINodeSocketType.swift */,
+				4789055E258068E600F7EFCE /* UINodeContentView.swift */,
+				477A921D2580B9BB007EBBD6 /* UITool.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		478905432580640800F7EFCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				47890535258061E200F7EFCE /* Assets.xcassets */,
+				47890537258061E200F7EFCE /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +179,6 @@
 			files = (
 				47890539258061E200F7EFCE /* LaunchScreen.storyboard in Resources */,
 				47890536258061E200F7EFCE /* Assets.xcassets in Resources */,
-				47890534258061E100F7EFCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +189,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47890531258061E100F7EFCE /* ViewController.swift in Sources */,
+				477A921E2580B9BB007EBBD6 /* UITool.swift in Sources */,
+				478905652580692200F7EFCE /* BaseNode.swift in Sources */,
+				47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */,
 				4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */,
-				4789052F258061E100F7EFCE /* SceneDelegate.swift in Sources */,
+				47890551258065ED00F7EFCE /* UICanvas.swift in Sources */,
+				478905622580690400F7EFCE /* Node.swift in Sources */,
+				478905592580686E00F7EFCE /* UINode.swift in Sources */,
+				4789055F258068E600F7EFCE /* UINodeContentView.swift in Sources */,
+				4789056925806A3500F7EFCE /* Utils.swift in Sources */,
+				4789054E2580656A00F7EFCE /* UIMesh.swift in Sources */,
+				4789055C258068A100F7EFCE /* UINodeSocketType.swift in Sources */,
+				478905562580684F00F7EFCE /* UICanvasOverlay.swift in Sources */,
+				4789056D2580A16A00F7EFCE /* BranchNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		47890532258061E100F7EFCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47890533258061E100F7EFCE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		47890537258061E200F7EFCE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,15 +340,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindMapEditor/MindMapEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pavlo.vorobiov.MindMapEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +362,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MindMapEditor/MindMapEditor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pavlo.vorobiov.MindMapEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
