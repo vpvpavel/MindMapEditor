@@ -8,6 +8,7 @@
 import Foundation
 
 struct BranchNode: Node {
-    static var id: String = "branch"
+    static var position: CGPoint = CGPoint()
+    static var id = UUID()
     static var title: String = "Branch"
 }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		477A921E2580B9BB007EBBD6 /* UITool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A921D2580B9BB007EBBD6 /* UITool.swift */; };
+		477A926425820C09007EBBD6 /* ToolsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A926325820C09007EBBD6 /* ToolsPanel.swift */; };
 		4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789052C258061E100F7EFCE /* AppDelegate.swift */; };
 		47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890530258061E100F7EFCE /* CanvasViewController.swift */; };
 		47890536258061E200F7EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47890535258061E200F7EFCE /* Assets.xcassets */; };
@@ -22,10 +22,12 @@
 		478905652580692200F7EFCE /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905642580692200F7EFCE /* BaseNode.swift */; };
 		4789056925806A3500F7EFCE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056825806A3500F7EFCE /* Utils.swift */; };
 		4789056D2580A16A00F7EFCE /* BranchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056C2580A16A00F7EFCE /* BranchNode.swift */; };
+		A0635FA725BE22EA00B4FACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */; };
+		A0635FAB25BE35F700B4FACA /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0635FAA25BE35F700B4FACA /* Canvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		477A921D2580B9BB007EBBD6 /* UITool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITool.swift; sourceTree = "<group>"; };
+		477A926325820C09007EBBD6 /* ToolsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsPanel.swift; sourceTree = "<group>"; };
 		47890529258061E100F7EFCE /* MindMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789052C258061E100F7EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47890530258061E100F7EFCE /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		478905642580692200F7EFCE /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
 		4789056825806A3500F7EFCE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4789056C2580A16A00F7EFCE /* BranchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchNode.swift; sourceTree = "<group>"; };
+		A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0635FAA25BE35F700B4FACA /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				4789054A258064C400F7EFCE /* MindMapEditor.entitlements */,
 				4789053A258061E200F7EFCE /* Info.plist */,
 				4789052C258061E100F7EFCE /* AppDelegate.swift */,
+				A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */,
 				47890530258061E100F7EFCE /* CanvasViewController.swift */,
 				47890541258062B600F7EFCE /* Models */,
 				47890542258062BF00F7EFCE /* UI */,
@@ -106,7 +111,8 @@
 				478905582580686E00F7EFCE /* UINode.swift */,
 				4789055B258068A100F7EFCE /* UINodeSocketType.swift */,
 				4789055E258068E600F7EFCE /* UINodeContentView.swift */,
-				477A921D2580B9BB007EBBD6 /* UITool.swift */,
+				477A926325820C09007EBBD6 /* ToolsPanel.swift */,
+				A0635FAA25BE35F700B4FACA /* Canvas.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -189,13 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				477A921E2580B9BB007EBBD6 /* UITool.swift in Sources */,
+				477A926425820C09007EBBD6 /* ToolsPanel.swift in Sources */,
+				A0635FAB25BE35F700B4FACA /* Canvas.swift in Sources */,
 				478905652580692200F7EFCE /* BaseNode.swift in Sources */,
 				47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */,
 				4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */,
 				47890551258065ED00F7EFCE /* UICanvas.swift in Sources */,
 				478905622580690400F7EFCE /* Node.swift in Sources */,
 				478905592580686E00F7EFCE /* UINode.swift in Sources */,
+				A0635FA725BE22EA00B4FACA /* SceneDelegate.swift in Sources */,
 				4789055F258068E600F7EFCE /* UINodeContentView.swift in Sources */,
 				4789056925806A3500F7EFCE /* Utils.swift in Sources */,
 				4789054E2580656A00F7EFCE /* UIMesh.swift in Sources */,
@@ -270,7 +278,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +332,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -344,7 +350,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -366,7 +372,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

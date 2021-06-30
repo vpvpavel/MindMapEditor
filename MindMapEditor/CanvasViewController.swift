@@ -6,18 +6,17 @@
 //
 
 import UIKit
+import SwiftUI
 
 public class CanvasViewController: UIViewController {
     
     /// Canvas that holds all of the nodes
     public let canvas: UICanvas
     var mesh: UIMesh
-    var toolsPanel: UITool
     
     public init() {
         canvas = UICanvas(frame: CGRect.zero)
         mesh = UIMesh(frame: canvas.bounds)
-        toolsPanel = UITool(frame: CGRect.zero)
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -38,13 +37,11 @@ public class CanvasViewController: UIViewController {
         canvas.bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
         
         // Add background mesh
-        
+        canvas.backgroundColor = .darkGray
         canvas.backgroundView = mesh
         
         create(node: BranchNode(), position: view.center)
-        
-        view.addSubview(toolsPanel)
-
+        create(node: BaseNode(), position: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2))
     }
     
     public override func viewDidLayoutSubviews() {

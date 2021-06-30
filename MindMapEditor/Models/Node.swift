@@ -12,8 +12,8 @@ public struct Connection {
 }
 
 public protocol Node {
-    static var id: String { get }
     static var title: String { get }
+    static var position: CGPoint { get }
     var input: Connection? { get }
     var output: [Connection] { get }
 }

@@ -21,7 +21,7 @@ public class UINode: UIView, UIGestureRecognizerDelegate {
         super.init(frame: CGRect(x: 0, y: 0, width: 99999, height: 9999)) // Need large frame so the layout can be made
         
         // Setup the view
-        backgroundColor = UIColor(white: 0, alpha: 0.3)
+        backgroundColor = UIColor(white: 0, alpha: 0.8)
         layer.cornerRadius = 8
         
         // Add label
@@ -130,6 +130,7 @@ public class UINode: UIView, UIGestureRecognizerDelegate {
         
         let socketName = UILabel(frame: CGRect.zero)
         socketName.text = name
+        socketName.textColor = .white
         view.addSubview(socketName)
         socketName.translatesAutoresizingMaskIntoConstraints = false
         socketName.topAnchor.constraint(equalTo: view.topAnchor, constant: 8).activate() // Make the view's height dependent on font size

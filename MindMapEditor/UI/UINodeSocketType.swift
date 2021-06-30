@@ -52,7 +52,7 @@ class UINodeSocket: UIView {
         
         // Style the view
         backgroundColor = .clear
-        shapeView.layer.cornerRadius = 8
+        shapeView.layer.cornerRadius = 0
         
         // Add the shape view
         shapeView.backgroundColor = type.color
@@ -149,7 +149,6 @@ class UINodeSocket: UIView {
     
     func connect(to socket: UINodeSocket) {
         connectedSockets.append(socket)
-        print(connectedSockets.count)
     }
 }
 

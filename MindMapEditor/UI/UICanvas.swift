@@ -54,8 +54,8 @@ public class UICanvas: UIScrollView, UIScrollViewDelegate {
         overlayView = UICanvasOverlay(frame: bounds, canvas: self)
         addSubview(overlayView)
         
-        let node = UINode(node: BaseNode())
-        insert(node: node, at: CGPoint(x: contentSize.width / 2, y: contentSize.height / 2))
+//        let node = UINode(node: BaseNode())
+//        insert(node: node, at: CGPoint(x: contentSize.width / 2, y: contentSize.height / 2))
         
         // Scroll to the center
         contentOffset = CGPoint(x: contentSize.width / 2 - 200, y: contentSize.height / 2 - 200)
