@@ -8,16 +8,18 @@
 import UIKit
 
 public class UINode: UIView, UIGestureRecognizerDelegate {
-    
-    public var contentView: UINodeContentView?
-    
+            
     /// Canvas that this node is displayed in.
     weak var canvas: UICanvas?
     
     /// List of all sockets on the node.
     var sockets: [UINodeSocket] = []
     
-    public init(node: Node) {
+    var nodeId: UUID
+    
+    public init(node: BaseNode) {
+        self.nodeId = node.id
+
         super.init(frame: CGRect(x: 0, y: 0, width: 99999, height: 9999)) // Need large frame so the layout can be made
         
         // Setup the view
@@ -28,7 +30,7 @@ public class UINode: UIView, UIGestureRecognizerDelegate {
         let titleNode = UILabel(frame: CGRect.zero)
         titleNode.textAlignment = .center
         titleNode.font = UIFont.systemFont(ofSize: 20, weight: .regular)
-        titleNode.text = type(of: node).title
+        titleNode.text = node.title//type(of: node).title
         titleNode.textColor = .white
         addSubview(titleNode)
         
@@ -69,11 +71,14 @@ public class UINode: UIView, UIGestureRecognizerDelegate {
         leftPanel.rightAnchor.constraint(equalTo: rightPanel.leftAnchor, constant: -8).activate()
         
         // stub property
-        addProperty(parent: leftPanel, leftAlign: true, socket: .in, name: "Input", type: ">")
+//        addProperty(parent: leftPanel, leftAlign: true, socket: .in, name: "Input", type: "")
+//        
+//        addProperty(parent: rightPanel, leftAlign: false, socket: .out, name: "Output", type: "")
+//        addProperty(parent: rightPanel, leftAlign: false, socket: .out, name: "Output", type: "")
         
-        addProperty(parent: rightPanel, leftAlign: false, socket: .out, name: "Output", type: ">")
-        addProperty(parent: rightPanel, leftAlign: false, socket: .out, name: "Output", type: ">")
-        
+        for socket in node.sockets {
+            addProperty(parent: (socket.type == .in ? leftPanel : rightPanel), socket: socket.type, name: socket.title, type: "")
+        }
         
         // Add drag gesture
         let dragGesture = UIPanGestureRecognizer(target: self, action: #selector(panned(sender:)))
@@ -112,10 +117,11 @@ public class UINode: UIView, UIGestureRecognizerDelegate {
     }
     
     func addProperty(parent: UIStackView,
-                     leftAlign: Bool,
-                     socket socketType: UINodeSocketType,
+                     socket socketType: NodeSocketType,
                      name: String,
                      type: String?) {
+        
+        let leftAlign = socketType == .in
         
         let view = UIView(frame: CGRect.zero)
         view.translatesAutoresizingMaskIntoConstraints = false

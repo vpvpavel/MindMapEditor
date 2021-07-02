@@ -37,7 +37,8 @@ public class UICanvas: UIScrollView, UIScrollViewDelegate {
         // touches
         delegate = self
         decelerationRate = UIScrollView.DecelerationRate.fast
-        contentSize = CGSize(width: 10000, height: 10000)
+        contentSize = CGSize(width: UIScreen.main.bounds.width,
+                             height: UIScreen.main.bounds.height)
         for recognizer in gestureRecognizers ?? [] {
             if let recognizer = recognizer as? UIPanGestureRecognizer {
                 // Only allow scrolling with two fingers
@@ -48,18 +49,14 @@ public class UICanvas: UIScrollView, UIScrollViewDelegate {
         
         // Style the view
         clipsToBounds = true
-        backgroundColor = .clear
+        backgroundColor = UIColor.clear
         
         // Add the overlay
         overlayView = UICanvasOverlay(frame: bounds, canvas: self)
         addSubview(overlayView)
         
-//        let node = UINode(node: BaseNode())
-//        insert(node: node, at: CGPoint(x: contentSize.width / 2, y: contentSize.height / 2))
-        
         // Scroll to the center
         contentOffset = CGPoint(x: contentSize.width / 2 - 200, y: contentSize.height / 2 - 200)
-        
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -87,7 +84,7 @@ public class UICanvas: UIScrollView, UIScrollViewDelegate {
         }
         
         // Perform updated
-        updated(node: node)
+//        updated(node: node)
     }
     
     public override func layoutSubviews() {

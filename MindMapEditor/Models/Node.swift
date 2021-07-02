@@ -6,20 +6,15 @@
 //
 
 import Foundation
+import CoreGraphics
 
-public struct Connection {
-    
+public struct Socket {
+    var type: NodeSocketType
+    var title = ""
 }
 
 public protocol Node {
-    static var title: String { get }
-    static var position: CGPoint { get }
-    var input: Connection? { get }
-    var output: [Connection] { get }
-}
-
-
-extension Node {
-    public var input: Connection? { return nil }
-    public var output: [Connection] { return [] }
+    var title: String { get }
+    var position: CGPoint? { get }
+    var sockets: [Socket] { get }
 }

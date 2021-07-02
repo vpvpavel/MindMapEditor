@@ -7,30 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47763595268C4466006FFA6F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47763594268C4466006FFA6F /* MainView.swift */; };
+		4776359A268C4762006FFA6F /* NodeSocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47763599268C4762006FFA6F /* NodeSocketType.swift */; };
+		4776359C268D6982006FFA6F /* MMEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4776359B268D6982006FFA6F /* MMEViewModel.swift */; };
+		4776359F268D7900006FFA6F /* Mesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4776359E268D7900006FFA6F /* Mesh.swift */; };
+		477635A1268D7F13006FFA6F /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477635A0268D7F13006FFA6F /* Canvas.swift */; };
 		477A926425820C09007EBBD6 /* ToolsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A926325820C09007EBBD6 /* ToolsPanel.swift */; };
 		4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789052C258061E100F7EFCE /* AppDelegate.swift */; };
-		47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890530258061E100F7EFCE /* CanvasViewController.swift */; };
 		47890536258061E200F7EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47890535258061E200F7EFCE /* Assets.xcassets */; };
 		47890539258061E200F7EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47890537258061E200F7EFCE /* LaunchScreen.storyboard */; };
 		4789054E2580656A00F7EFCE /* UIMesh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789054D2580656A00F7EFCE /* UIMesh.swift */; };
 		47890551258065ED00F7EFCE /* UICanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47890550258065ED00F7EFCE /* UICanvas.swift */; };
 		478905562580684F00F7EFCE /* UICanvasOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905552580684F00F7EFCE /* UICanvasOverlay.swift */; };
 		478905592580686E00F7EFCE /* UINode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905582580686E00F7EFCE /* UINode.swift */; };
-		4789055C258068A100F7EFCE /* UINodeSocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789055B258068A100F7EFCE /* UINodeSocketType.swift */; };
-		4789055F258068E600F7EFCE /* UINodeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789055E258068E600F7EFCE /* UINodeContentView.swift */; };
+		4789055C258068A100F7EFCE /* SocketType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789055B258068A100F7EFCE /* SocketType.swift */; };
 		478905622580690400F7EFCE /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905612580690400F7EFCE /* Node.swift */; };
 		478905652580692200F7EFCE /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478905642580692200F7EFCE /* BaseNode.swift */; };
 		4789056925806A3500F7EFCE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056825806A3500F7EFCE /* Utils.swift */; };
-		4789056D2580A16A00F7EFCE /* BranchNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789056C2580A16A00F7EFCE /* BranchNode.swift */; };
 		A0635FA725BE22EA00B4FACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */; };
-		A0635FAB25BE35F700B4FACA /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0635FAA25BE35F700B4FACA /* Canvas.swift */; };
+		A0635FAB25BE35F700B4FACA /* CanvasRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0635FAA25BE35F700B4FACA /* CanvasRepresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47763594268C4466006FFA6F /* MainView.swift */ = {isa = PBXFileReference; indentWidth = 0; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; tabWidth = 1; };
+		47763599268C4762006FFA6F /* NodeSocketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeSocketType.swift; sourceTree = "<group>"; };
+		4776359B268D6982006FFA6F /* MMEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMEViewModel.swift; sourceTree = "<group>"; };
+		4776359E268D7900006FFA6F /* Mesh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mesh.swift; sourceTree = "<group>"; };
+		477635A0268D7F13006FFA6F /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		477A926325820C09007EBBD6 /* ToolsPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsPanel.swift; sourceTree = "<group>"; };
 		47890529258061E100F7EFCE /* MindMapEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindMapEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789052C258061E100F7EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47890530258061E100F7EFCE /* CanvasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		47890535258061E200F7EFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47890538258061E200F7EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4789053A258061E200F7EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,14 +45,12 @@
 		47890550258065ED00F7EFCE /* UICanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvas.swift; sourceTree = "<group>"; };
 		478905552580684F00F7EFCE /* UICanvasOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICanvasOverlay.swift; sourceTree = "<group>"; };
 		478905582580686E00F7EFCE /* UINode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINode.swift; sourceTree = "<group>"; };
-		4789055B258068A100F7EFCE /* UINodeSocketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINodeSocketType.swift; sourceTree = "<group>"; };
-		4789055E258068E600F7EFCE /* UINodeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINodeContentView.swift; sourceTree = "<group>"; };
+		4789055B258068A100F7EFCE /* SocketType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketType.swift; sourceTree = "<group>"; };
 		478905612580690400F7EFCE /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		478905642580692200F7EFCE /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
 		4789056825806A3500F7EFCE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		4789056C2580A16A00F7EFCE /* BranchNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchNode.swift; sourceTree = "<group>"; };
 		A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A0635FAA25BE35F700B4FACA /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
+		A0635FAA25BE35F700B4FACA /* CanvasRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasRepresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47763597268C46E6006FFA6F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4776359B268D6982006FFA6F /* MMEViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		47763598268C471E006FFA6F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4776359D268D78E0006FFA6F /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				478905552580684F00F7EFCE /* UICanvasOverlay.swift */,
+				47890550258065ED00F7EFCE /* UICanvas.swift */,
+				4789054D2580656A00F7EFCE /* UIMesh.swift */,
+				478905582580686E00F7EFCE /* UINode.swift */,
+				4789055B258068A100F7EFCE /* SocketType.swift */,
+			);
+			path = UIKitViews;
+			sourceTree = "<group>";
+		};
 		47890520258061E100F7EFCE = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +110,12 @@
 		4789052B258061E100F7EFCE /* MindMapEditor */ = {
 			isa = PBXGroup;
 			children = (
-				4789054A258064C400F7EFCE /* MindMapEditor.entitlements */,
 				4789053A258061E200F7EFCE /* Info.plist */,
-				4789052C258061E100F7EFCE /* AppDelegate.swift */,
-				A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */,
-				47890530258061E100F7EFCE /* CanvasViewController.swift */,
+				4789054A258064C400F7EFCE /* MindMapEditor.entitlements */,
+				47763598268C471E006FFA6F /* Controllers */,
+				47763597268C46E6006FFA6F /* ViewModels */,
 				47890541258062B600F7EFCE /* Models */,
-				47890542258062BF00F7EFCE /* UI */,
+				47890542258062BF00F7EFCE /* Views */,
 				478905432580640800F7EFCE /* Resources */,
 				4789056825806A3500F7EFCE /* Utils.swift */,
 			);
@@ -97,29 +127,29 @@
 			children = (
 				478905612580690400F7EFCE /* Node.swift */,
 				478905642580692200F7EFCE /* BaseNode.swift */,
-				4789056C2580A16A00F7EFCE /* BranchNode.swift */,
+				47763599268C4762006FFA6F /* NodeSocketType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		47890542258062BF00F7EFCE /* UI */ = {
+		47890542258062BF00F7EFCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				478905552580684F00F7EFCE /* UICanvasOverlay.swift */,
-				47890550258065ED00F7EFCE /* UICanvas.swift */,
-				4789054D2580656A00F7EFCE /* UIMesh.swift */,
-				478905582580686E00F7EFCE /* UINode.swift */,
-				4789055B258068A100F7EFCE /* UINodeSocketType.swift */,
-				4789055E258068E600F7EFCE /* UINodeContentView.swift */,
+				4776359D268D78E0006FFA6F /* UIKitViews */,
 				477A926325820C09007EBBD6 /* ToolsPanel.swift */,
-				A0635FAA25BE35F700B4FACA /* Canvas.swift */,
+				A0635FAA25BE35F700B4FACA /* CanvasRepresentable.swift */,
+				477635A0268D7F13006FFA6F /* Canvas.swift */,
+				4776359E268D7900006FFA6F /* Mesh.swift */,
+				47763594268C4466006FFA6F /* MainView.swift */,
 			);
-			path = UI;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		478905432580640800F7EFCE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4789052C258061E100F7EFCE /* AppDelegate.swift */,
+				A0635FA625BE22EA00B4FACA /* SceneDelegate.swift */,
 				47890535258061E200F7EFCE /* Assets.xcassets */,
 				47890537258061E200F7EFCE /* LaunchScreen.storyboard */,
 			);
@@ -196,20 +226,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				477A926425820C09007EBBD6 /* ToolsPanel.swift in Sources */,
-				A0635FAB25BE35F700B4FACA /* Canvas.swift in Sources */,
+				A0635FAB25BE35F700B4FACA /* CanvasRepresentable.swift in Sources */,
 				478905652580692200F7EFCE /* BaseNode.swift in Sources */,
-				47890531258061E100F7EFCE /* CanvasViewController.swift in Sources */,
 				4789052D258061E100F7EFCE /* AppDelegate.swift in Sources */,
+				4776359C268D6982006FFA6F /* MMEViewModel.swift in Sources */,
+				4776359F268D7900006FFA6F /* Mesh.swift in Sources */,
+				477635A1268D7F13006FFA6F /* Canvas.swift in Sources */,
 				47890551258065ED00F7EFCE /* UICanvas.swift in Sources */,
 				478905622580690400F7EFCE /* Node.swift in Sources */,
 				478905592580686E00F7EFCE /* UINode.swift in Sources */,
+				4776359A268C4762006FFA6F /* NodeSocketType.swift in Sources */,
 				A0635FA725BE22EA00B4FACA /* SceneDelegate.swift in Sources */,
-				4789055F258068E600F7EFCE /* UINodeContentView.swift in Sources */,
+				47763595268C4466006FFA6F /* MainView.swift in Sources */,
 				4789056925806A3500F7EFCE /* Utils.swift in Sources */,
 				4789054E2580656A00F7EFCE /* UIMesh.swift in Sources */,
-				4789055C258068A100F7EFCE /* UINodeSocketType.swift in Sources */,
+				4789055C258068A100F7EFCE /* SocketType.swift in Sources */,
 				478905562580684F00F7EFCE /* UICanvasOverlay.swift in Sources */,
-				4789056D2580A16A00F7EFCE /* BranchNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +404,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6DV9E4QWYH;
 				INFOPLIST_FILE = MindMapEditor/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

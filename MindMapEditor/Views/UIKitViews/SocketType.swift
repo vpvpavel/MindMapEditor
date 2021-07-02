@@ -8,33 +8,8 @@
 import Foundation
 import UIKit
 
-enum UINodeSocketType {
-    case `in`
-    case out
-    
-    var color: UIColor {
-        switch self {
-        case .in:
-            return .white
-        case .out:
-            return .lightGray
-        }
-    }
-
-    var connectionColor: UIColor { return UIColor(white: 0.7, alpha: 0.8) }
-    
-    var isInput: Bool {
-        switch self {
-        case .in:
-            return true
-        case .out:
-            return false
-        }
-    }
-}
-
 class UINodeSocket: UIView {
-    private(set) var type: UINodeSocketType
+    private(set) var type: NodeSocketType
     
     weak var node: UINode?
     
@@ -44,7 +19,7 @@ class UINodeSocket: UIView {
     
     private var shapeView: UIView = UIView()
     
-    init(frame: CGRect, type: UINodeSocketType, node: UINode) {
+    init(frame: CGRect, type: NodeSocketType, node: UINode) {
         self.type = type
         self.node = node
         

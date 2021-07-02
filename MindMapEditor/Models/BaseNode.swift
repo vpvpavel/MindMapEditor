@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import CoreGraphics
 
-struct BaseNode: Node {
-    static var position: CGPoint = CGPoint()
-    static var id = UUID()
-    static var title: String = "Start"
+public struct BaseNode: Node, Identifiable {
+    public var id = UUID()
+    public var position: CGPoint?
+    public var title: String = ""
+    public var sockets: [Socket] = []
 }
